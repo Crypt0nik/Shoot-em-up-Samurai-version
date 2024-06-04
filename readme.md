@@ -35,7 +35,7 @@ La page d'accueil est le point de départ de votre aventure. Elle propose plusie
   - Cliquez sur une carte pour la sélectionner et jouer dans cet environnement spécifique.
 
 <br>
-<img width="1000" src="/images/cpt4.png" alt="Image description">
+<img width="1000" src="/images/cpt41.png" alt="Image description">
 <img width="1000" src="/images/cpt5.png" alt="Image description">
 <br>
 
