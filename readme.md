@@ -8,11 +8,17 @@ Bienvenue dans **"Samurai Shoot'em Up"**, un jeu de type Shoot'em up que j'ai en
 
 ### Page d'accueil (home.html)
 
+<img src="/images/cpt1.png" alt="Image description">
+
 La page d'accueil est le point de départ de votre aventure. Elle propose plusieurs boutons interactifs pour naviguer dans le jeu :
+
+<img src="/images/cpt2.png" alt="Image description">
 
 - **Bouton "Play"** : 
   - Lancez immédiatement le jeu en cliquant sur ce bouton.
   - Vous serez dirigé directement vers l'écran de jeu où l'action commence immédiatement.
+
+<img src="/images/cpt3.png" alt="Image description">
 
 - **Bouton "Maps"** : 
   - Découvrez les différentes cartes jouables à travers un carrousel.
