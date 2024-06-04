@@ -30,8 +30,8 @@ La page d'accueil est le point de départ de votre aventure. Elle propose plusie
 - **Bouton "Maps"** : 
   - Découvrez les différentes cartes jouables à travers un carrousel.
   - Actuellement, trois cartes sont affichées, mais seulement deux sont jouables :
-    - **Map Samurais** : Une carte riche en éléments visuels évoquant l'époque des samurais. Plongez dans une ambiance féodale avec des temples, des forêts de bambous et des ennemis en armure traditionnelle.
-    - **Map Allemagne 20ème siècle** : Une carte inspirée de l'Allemagne pendant la deuxième moitié du 20ème siècle. Combattez dans des décors industriels et urbains, face à des ennemis technologiquement avancés.
+    - **Map Samurais** : Une carte riche en éléments visuels évoquant l'époque des samurais. Plongez dans une ambiance féodale avec des temples, des enemis sous forme de phantôme et un boss ninja qui viendra vous attaquer.
+    - **Map Allemagne 20ème siècle** : Une carte inspirée de l'Allemagne pendant la deuxième moitié du 20ème siècle. Combattez dans des décors historiques, face à des ennemis qui réclament votre argent et un boss plus que diabolique...
   - Cliquez sur une carte pour la sélectionner et jouer dans cet environnement spécifique.
 
 <br>
@@ -58,7 +58,7 @@ Le cœur du jeu repose sur une jouabilité fluide et engageante. Voici ce que vo
 
 - **Contrôle du personnage** : 
   - Vous incarnez un samurai dont le bras peut être déplacé pour tirer des missiles.
-  - Utilisez la souris pour déplacer le bras et viser. Cliquez pour tirer des missiles et abattre les ennemis.
+  - Utilisez les flèches numériques pour déplacer le bras et viser. Les tires des missiles sont automatiques.
 
 - **Ennemis** : 
   - Les ennemis apparaissent aléatoirement du haut de l'écran et deviennent de plus en plus grands en descendant.
@@ -70,7 +70,7 @@ Le cœur du jeu repose sur une jouabilité fluide et engageante. Voici ce que vo
 
 - **Boss** : 
   - Après avoir tué un certain nombre d'ennemis, un boss plus résistant apparaît.
-  - Le boss est un ennemi puissant qui demande plusieurs tirs pour être vaincu. Le vaincre vous rapportera 500 points supplémentaires et représente un défi majeur dans le jeu.
+  - Le boss est un ennemi puissant qui demande plusieurs tirs pour être vaincu. Le vaincre vous rapportera 500 points supplémentaires et représente un défi majeur dans le jeu car il conclu la première manche.
 
 <br>
 <img width="1000" src="/images/cpt8.png" alt="Image description">
@@ -81,4 +81,4 @@ Le cœur du jeu repose sur une jouabilité fluide et engageante. Voici ce que vo
   - **Victoire** : Si vous battez le boss, un pop-up apparaîtra avec des options pour continuer à jouer ou retourner à la page d'accueil.
   - **Défaite** : Si votre personnage meurt, un pop-up similaire apparaîtra, vous offrant la possibilité de rejouer ou de revenir à la page d'accueil.
 
-## Arthur CHESSÉ®
+## Arthur CHESSÉ
