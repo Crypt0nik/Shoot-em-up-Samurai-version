@@ -9,20 +9,18 @@ Bienvenue dans **"Samurai Shoot'em Up"**, un jeu de type Shoot'em up que j'ai en
 ### Page d'accueil (home.html)
 
 <img src="/images/cpt1.png" alt="Image description">
+<br>
 
 La page d'accueil est le point de départ de votre aventure. Elle propose plusieurs boutons interactifs pour naviguer dans le jeu :
 
-<img src="/images/cpt2.png" alt="Image description">
-
-<img width="1470" alt="Capture d’écran 2024-02-27 à 12 13 59" src="https://github.com/Crypt0nik/Shoot-em-up-Samurai-version/images/73042925/ct1.png"> 
 <br>
-
 
 - **Bouton "Play"** : 
   - Lancez immédiatement le jeu en cliquant sur ce bouton.
   - Vous serez dirigé directement vers l'écran de jeu où l'action commence immédiatement.
 
 <img src="/images/cpt3.png" alt="Image description">
+<br>
 
 - **Bouton "Maps"** : 
   - Découvrez les différentes cartes jouables à travers un carrousel.
@@ -30,6 +28,11 @@ La page d'accueil est le point de départ de votre aventure. Elle propose plusie
     - **Map Samurais** : Une carte riche en éléments visuels évoquant l'époque des samurais. Plongez dans une ambiance féodale avec des temples, des forêts de bambous et des ennemis en armure traditionnelle.
     - **Map Allemagne 20ème siècle** : Une carte inspirée de l'Allemagne pendant la deuxième moitié du 20ème siècle. Combattez dans des décors industriels et urbains, face à des ennemis technologiquement avancés.
   - Cliquez sur une carte pour la sélectionner et jouer dans cet environnement spécifique.
+
+<img width="1000" src="/images/cpt4.png" alt="Image description">
+<img width="1000" src="/images/cpt5.png" alt="Image description">
+<br>
+
 
 - **Bouton "Règles"** : 
   - Consultez les règles du jeu pour comprendre les mécanismes et les objectifs.
