@@ -14,6 +14,10 @@ La page d'accueil est le point de départ de votre aventure. Elle propose plusie
 
 <img src="/images/cpt2.png" alt="Image description">
 
+<img width="1470" alt="Capture d’écran 2024-02-27 à 12 13 59" src="https://github.com/Crypt0nik/Shoot-em-up-Samurai-version/images/73042925/ct1.png"> 
+<br>
+
+
 - **Bouton "Play"** : 
   - Lancez immédiatement le jeu en cliquant sur ce bouton.
   - Vous serez dirigé directement vers l'écran de jeu où l'action commence immédiatement.
