@@ -1,8 +1,11 @@
-# Samurai Shoot'em Up - README
+  # Samurai Shoot'em Up - README - Arthur CHESSÉ
 
 ## Présentation
 
 Bienvenue dans **"Samurai Shoot'em Up"**, un jeu de type Shoot'em up que j'ai entièrement développé en JavaScript natif. Plongez dans un univers captivant où vous incarnez un samurai combattant des vagues d'ennemis redoutables et des boss imposants. Avec des graphismes inspirés des époques historiques et une jouabilité intense, ce jeu promet de vous offrir des heures de divertissement palpitant.
+
+https://shoot-em-up-samurai.vercel.app/ <br>
+
 
 ## Fonctionnalités
 
