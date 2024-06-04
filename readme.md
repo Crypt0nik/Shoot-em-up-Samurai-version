@@ -78,4 +78,4 @@ Le cœur du jeu repose sur une jouabilité fluide et engageante. Voici ce que vo
   - **Victoire** : Si vous battez le boss, un pop-up apparaîtra avec des options pour continuer à jouer ou retourner à la page d'accueil.
   - **Défaite** : Si votre personnage meurt, un pop-up similaire apparaîtra, vous offrant la possibilité de rejouer ou de revenir à la page d'accueil.
 
-## Installation
+## Arthur CHESSÉ®

@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Gardien des Âmes</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <div class="tete">
         <img id="teteImage" src="/images/têteperso_sam.png" alt="Tête du bogos">
     </div>
     <canvas id="gameCanvas" width="900" height="915"></canvas>
-    <script src="src/class/script.js" type="module"></script>
+    <script src="/src/class/script.js" type="module"></script>
     
 
     <div class="popup" id="popup2" style="display: none;">
         <img class="popupwin" src="/images/loose.png" alt="popup pour la loose">
-        <button onclick="window.location.href='./pages/home.html'">RETOUR</button>
-        <button class="continue" onclick="window.location.href='/index.html'">REJOUER</button> 
+        <button onclick="window.location.href='/home.html'">RETOUR</button>
+        <button class="continue" onclick="window.location.href='/pages/index.html'">REJOUER</button> 
     </div>
     
 
     <div class="popup" id="popup" style="display: none;">
         
         <img class="popupwin" src="/images/win.png" alt="popup pour la win">
-        <button onclick="window.location.href='./pages/home.html'">RETOUR</button>
-        <button class="continue" onclick="window.location.href='/index.html'">CONTINUER</button>
+        <button onclick="window.location.href='/home.html'">RETOUR</button>
+        <button class="continue" onclick="window.location.href='/pages/index.html'">CONTINUER</button>
     </div>
     </div>
     
@@ -73,22 +73,22 @@
 
         const image = document.querySelector('.tete');
         let positionX = -150;
-        let positionY = -200; // Position verticale initiale
+        let positionY = -200; 
     
-        const stepSizeX = 3; // Multiplicateur plus élevé pour la position X
-        const stepSizeY = 2; // Multiplicateur normal pour la position Y
+        const stepSizeX = 3; 
+        const stepSizeY = 2; 
         let directionX = 0;
-        let directionY = 0; // Ajout d'une direction verticale
+        let directionY = 0; 
     
-        // Définir la limite maximale pour la position Y (moitié de la hauteur du canvas)
+        
         const maxAllowedY = 100;
-        const minAllowedY = -300; // Vous pouvez ajuster cette valeur pour permettre un mouvement plus haut
+        const minAllowedY = -300;
 
-        const minX = -600; // Position minimale horizontale
-        const maxX = 100; // Position maximale horizontale
+        const minX = -600;
+        const maxX = 100;
     
         function updatePosition() {
-        // Mettre à jour la position horizontale en fonction de la direction et des limites
+        
         positionX += stepSizeX * directionX;
         if (positionX < minX) {
             positionX = minX;
@@ -96,7 +96,7 @@
             positionX = maxX;
         }
 
-        // Mettre à jour la position verticale en fonction de la direction et des limites
+        
         positionY += stepSizeY * directionY;
         if (positionY < minAllowedY) {
             positionY = minAllowedY;
@@ -104,11 +104,11 @@
             positionY = maxAllowedY;
         }
 
-        // Appliquer les nouvelles positions
+        
         image.style.left = positionX + 'px';
         image.style.top = positionY + 'px';
         
-        // Demander une nouvelle frame d'animation
+        
         requestAnimationFrame(updatePosition);
     }
     
@@ -118,9 +118,9 @@
             } else if (event.key === 'ArrowLeft' || event.key === 'Left') {
                 directionX = -1;
             } else if (event.key === 'ArrowUp' || event.key === 'Up') {
-                directionY = -1; // Déplacer vers le haut lorsque la touche fléchée vers le haut est enfoncée
+                directionY = -1; 
             } else if (event.key === 'ArrowDown' || event.key === 'Down') {
-                directionY = 1; // Déplacer vers le bas lorsque la touche fléchée vers le bas est enfoncée
+                directionY = 1; 
             }
         });
     
@@ -129,11 +129,11 @@
                 directionX = 0;
             }
             if (event.key === 'ArrowUp' || event.key === 'Up' || event.key === 'ArrowDown' || event.key === 'Down') {
-                directionY = 0; // Arrêter le mouvement vertical lorsque la touche fléchée vers le haut ou vers le bas est relâchée
+                directionY = 0; 
             }
         });
     
-        // Initialiser l'animation
+
         requestAnimationFrame(updatePosition);
     </script>
     

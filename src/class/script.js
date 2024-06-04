@@ -40,7 +40,7 @@ class Player {
         this.lastFired = Date.now();
         this.baseSize = 200;
         this.image = new Image();
-        this.image.src = './images/bra_sam.png';
+        this.image.src = '/images/bra_sam.png';
         this.offsetX = -100; // Valeur constante pour décaler l'image vers la gauche
         this.offsetY = -100; // Valeur constante pour décaler l'image vers le bas
 
