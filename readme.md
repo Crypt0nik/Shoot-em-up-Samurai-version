@@ -6,7 +6,7 @@ Bienvenue dans **"Samurai Shoot'em Up"**, un jeu de type Shoot'em up que j'ai en
 
 ## Fonctionnalités
 
-### Page d'accueil (home.html)
+### Page d'accueil (index.html)
 
 <br>
 <img src="/images/cpt1.png" alt="Image description">

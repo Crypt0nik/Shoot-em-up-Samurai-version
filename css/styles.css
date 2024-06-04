@@ -47,6 +47,21 @@ canvas {
 }
 
 
+.retour a {
+    scale: 3;
+    
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    margin-top: -24%;
+    margin-left: -15%;
+    opacity: 0.6;
+}
+
+.retour a:hover {
+    opacity: 1;
+}
+
 .tete {
 
     position: fixed;
