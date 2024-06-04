@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+.passion-one-regular {
+    font-family: "Passion One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.passion-one-bold {
+    font-family: "Passion One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.passion-one-black {
+    font-family: "Passion One", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place l'image de fond derrière le contenu */
+}
+
+.bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Couvre toute la fenêtre */
+}
+
+.bouton-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px; /* Espace entre les boutons */
+    z-index: 1; /* Assure que les boutons sont au-dessus de l'image de fond */
+}
+
+.play {
+    margin-top: 150px;
+    width: 250px;
+}
+.maps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 120px;
+    margin-left: -25%;
+    text-align: center;
+}
+
+.maps:hover {
+
+}
+
+.rules {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    width: 120px;
+    margin-top: -51%;
+    margin-left: 78%;
+}
+
+.bouton-container button {
+    transform: scale(2);
+    padding: 10px 20px;
+    font-size: 25px;
+    -webkit-box-shadow: 5px 7px 0px 2px rgba(0,0,0,0.6); 
+    box-shadow: 2px 3px 0px 1px rgba(0,0,0,0.6), inset 2px 3px 0px 1px rgba(0,0,0,0.3);
+z-index: 2;
+    font-family: 'Passion One', sans-serif;
+    background-color: #cfcfcf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.bouton-container button a {
+    text-decoration: none;
+    color: inherit; /* Hérite la couleur du bouton */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    z-index: 2;
+}
+
+.bouton-container button:hover {
+    transform: scale(1.95);
+    background-color: #cfcfcf;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+/* Par défaut, .perso est caché */
+.perso {
+    position: absolute;
+    top: 70%; /* Ajustez cette valeur selon vos besoins */
+    left: 50%; /* Ajustez cette valeur selon vos besoins */
+    transform: translate(-50%, -50%); /* Pour centrer l'image */
+    z-index: 1;
+    
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Affiche .perso lorsque le bouton "JOUER" est en hover */
+.bouton-container .play:hover ~ .perso {
+    display: block;
+    opacity: 1;
+}
+
+.credit {
+    position: absolute;
+    color: white;
+    z-index: 5;
+    margin-top: 36%;
+    margin-left: -12.5%;
+    opacity: 0.2;
+    transition: all ease-in 0.3s;
+}
+
+.credit:hover {
+    opacity: 0.8;
+}

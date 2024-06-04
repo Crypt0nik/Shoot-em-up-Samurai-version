@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Gardien des Âmes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="tete">
+        <img id="teteImage" src="/images/têteperso_sam.png" alt="Tête du bogos">
+    </div>
+    <canvas id="gameCanvas" width="900" height="915"></canvas>
+    <script src="src/class/script.js" type="module"></script>
+    
+
+    <div class="popup" id="popup2" style="display: none;">
+        <img class="popupwin" src="/images/loose.png" alt="popup pour la loose">
+        <button onclick="window.location.href='./pages/home.html'">RETOUR</button>
+        <button class="continue" onclick="window.location.href='/index.html'">REJOUER</button> 
+    </div>
+    
+
+    <div class="popup" id="popup" style="display: none;">
+        
+        <img class="popupwin" src="/images/win.png" alt="popup pour la win">
+        <button onclick="window.location.href='./pages/home.html'">RETOUR</button>
+        <button class="continue" onclick="window.location.href='/index.html'">CONTINUER</button>
+    </div>
+    </div>
+    
+    <button style="display: none;" id="button_naz">Changer les images</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const redirected = urlParams.get('redirected');
+            if (redirected === 'true') {
+                document.getElementById('button_naz').click();
+            }
+        });
+    </script>
+    
+
+    <script>
+        const buttonNaz = document.getElementById('button_naz');
+        const canvas = document.getElementById('gameCanvas');
+        const teteImage = document.getElementById('teteImage');
+        
+        let isImageNaz = false; // Variable pour suivre l'état de l'image
+
+        buttonNaz.addEventListener('click', () => {
+            // Alterner entre les images de tête
+            if (isImageNaz) {
+                teteImage.src = '/images/têteperso_sam.png';
+            } else {
+                teteImage.src = '/images/têteperso_naz.png';
+            }
+            isImageNaz = !isImageNaz; // Inverser l'état de l'image
+
+            // Changer l'image de fond du canvas
+            if (canvas.style.backgroundImage.includes('bgbgtest6_naz.png')) {
+                canvas.style.backgroundImage = 'url("/images/bgbgtest6_sam.png")';
+            } else {
+                canvas.style.backgroundImage = 'url("/images/bgbgtest6_naz.png")';
+            }
+        });
+    </script>
+    
+
+    <script>
+
+
+        const image = document.querySelector('.tete');
+        let positionX = -150;
+        let positionY = -200; // Position verticale initiale
+    
+        const stepSizeX = 3; // Multiplicateur plus élevé pour la position X
+        const stepSizeY = 2; // Multiplicateur normal pour la position Y
+        let directionX = 0;
+        let directionY = 0; // Ajout d'une direction verticale
+    
+        // Définir la limite maximale pour la position Y (moitié de la hauteur du canvas)
+        const maxAllowedY = 100;
+        const minAllowedY = -300; // Vous pouvez ajuster cette valeur pour permettre un mouvement plus haut
+
+        const minX = -600; // Position minimale horizontale
+        const maxX = 100; // Position maximale horizontale
+    
+        function updatePosition() {
+        // Mettre à jour la position horizontale en fonction de la direction et des limites
+        positionX += stepSizeX * directionX;
+        if (positionX < minX) {
+            positionX = minX;
+        } else if (positionX > maxX) {
+            positionX = maxX;
+        }
+
+        // Mettre à jour la position verticale en fonction de la direction et des limites
+        positionY += stepSizeY * directionY;
+        if (positionY < minAllowedY) {
+            positionY = minAllowedY;
+        } else if (positionY > maxAllowedY) {
+            positionY = maxAllowedY;
+        }
+
+        // Appliquer les nouvelles positions
+        image.style.left = positionX + 'px';
+        image.style.top = positionY + 'px';
+        
+        // Demander une nouvelle frame d'animation
+        requestAnimationFrame(updatePosition);
+    }
+    
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowRight' || event.key === 'Right') {
+                directionX = 1;
+            } else if (event.key === 'ArrowLeft' || event.key === 'Left') {
+                directionX = -1;
+            } else if (event.key === 'ArrowUp' || event.key === 'Up') {
+                directionY = -1; // Déplacer vers le haut lorsque la touche fléchée vers le haut est enfoncée
+            } else if (event.key === 'ArrowDown' || event.key === 'Down') {
+                directionY = 1; // Déplacer vers le bas lorsque la touche fléchée vers le bas est enfoncée
+            }
+        });
+    
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'ArrowRight' || event.key === 'Right' || event.key === 'ArrowLeft' || event.key === 'Left') {
+                directionX = 0;
+            }
+            if (event.key === 'ArrowUp' || event.key === 'Up' || event.key === 'ArrowDown' || event.key === 'Down') {
+                directionY = 0; // Arrêter le mouvement vertical lorsque la touche fléchée vers le haut ou vers le bas est relâchée
+            }
+        });
+    
+        // Initialiser l'animation
+        requestAnimationFrame(updatePosition);
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Règles</title>
+    <link rel="stylesheet" href="/css/rules.css">
+</head>
+<body>
+    <div class="retour">
+        <a href="/pages/home.html">⬅</a>
+    </div>
+    <div class="bg">
+        <img src="/images/Homepgaee.png" alt="" class="backgroung">
+    </div>
+
+    <div class="rules">
+        <img class="rules1" src="/images/rules1.png" alt="regles 1">
+        <img class="rules2" src="/images/rules2.png" alt="regles 2">
+    </div>
+
+    <div class="navigation">
+        <button id="prevBtn">⬅</button>
+        <button id="nextBtn">⮕</button>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const rules1 = document.querySelector('.rules1');
+        const rules2 = document.querySelector('.rules2');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+    
+        // Afficher la première règle et masquer la deuxième règle au chargement de la page
+        rules1.style.display = 'block';
+        rules2.style.display = 'none';
+    
+        // Ajouter un gestionnaire d'événements au bouton "Précédent"
+        prevBtn.addEventListener('click', function() {
+            // Si la règle 1 est visible, masquer la règle 1 et afficher la règle 2
+            if (rules1.style.display === 'block') {
+                rules1.style.display = 'none';
+                rules2.style.display = 'block';
+            }
+            // Si la règle 2 est visible, masquer la règle 2 et afficher la règle 1
+            else {
+                rules1.style.display = 'block';
+                rules2.style.display = 'none';
+            }
+        });
+    
+        // Ajouter un gestionnaire d'événements au bouton "Suivant"
+        nextBtn.addEventListener('click', function() {
+            // Si la règle 1 est visible, masquer la règle 1 et afficher la règle 2
+            if (rules1.style.display === 'block') {
+                rules1.style.display = 'none';
+                rules2.style.display = 'block';
+            }
+            // Si la règle 2 est visible, masquer la règle 2 et afficher la règle 1
+            else {
+                rules1.style.display = 'block';
+                rules2.style.display = 'none';
+            }
+        });
+    });
+    </script>
+
+</body>
+</html>
