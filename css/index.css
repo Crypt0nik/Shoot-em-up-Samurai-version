@@ -127,9 +127,7 @@ z-index: 2;
     transition: opacity 0.5s ease;
 }
 
-/* Affiche .perso lorsque le bouton "JOUER" est en hover */
-.bouton-container .play:hover ~ .perso {
-    display: block;
+.play:hover ~ .perso {
     opacity: 1;
 }
 
